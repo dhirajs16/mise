@@ -1,6 +1,6 @@
 # **Project Setup Guide**
 
-## Overview
+## **Overview**
 This project uses React for the frontend and Django with DRF for the backend. Follow these steps to set up the project on your local machine.
 
 ## Prerequisites
@@ -39,7 +39,7 @@ This project uses React for the frontend and Django with DRF for the backend. Fo
    npm run dev
 
    ```
-
+<hr>
 
 ## **Backend Setup**
 
@@ -64,6 +64,8 @@ This project uses React for the frontend and Django with DRF for the backend. Fo
    python manage.py migrate
    
    ```
+
+- Set your `SECRET_KEY` in the `./backend/settings/base.py` file.
 
 4. **Run the Backend Server**:
    ```bash

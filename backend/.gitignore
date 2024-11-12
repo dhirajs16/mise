@@ -1,5 +1,12 @@
-# virtual env
-**/venv
+#virtual env
+**/venv/
 
-# db
-*sqlite3
+# Ignore SQLite database files
+*.sqlite3
+
+# Other common items to ignore
+**__pycache__/
+*.py[cod]
+*.log
+.DS_Store
+*.env
