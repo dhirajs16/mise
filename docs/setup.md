@@ -30,6 +30,10 @@ This project uses React for the frontend and Django with DRF for the backend. Fo
    ```bash
 
    npm install tailwindcss postcss autoprefixer
+   npx -D tailwindcss init
+   npm install react-icons
+   npm install @mui/icons-material @mui/material @emotion/styled @emotion/react
+   npm install react-router-dom
 
    ```
 
