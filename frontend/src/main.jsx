@@ -4,6 +4,7 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import "./index.css";
 import App from "./App.jsx";
 
+const Login = lazy(() => import("./Pages/Login.jsx"));
 const Home = lazy(() => import("./Pages/Home.jsx"));
 const About = lazy(() => import("./Pages/About.jsx"));
 const Contacts = lazy(() => import("./Pages/Contacts.jsx"));
@@ -36,6 +37,14 @@ const router = createBrowserRouter([
         element: (
           <Suspense fallback={loading}>
             <Contacts />
+          </Suspense>
+        ),
+      },
+      {
+        path: "/login",
+        element: (
+          <Suspense fallback={loading}>
+            <Login />
           </Suspense>
         ),
       },
