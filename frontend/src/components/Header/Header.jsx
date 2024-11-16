@@ -9,7 +9,7 @@ import SearchBar from "./SearchBar";
 const Header = () => {
   return (
     <>
-      <div className="flex justify-between items-center h-16 sm:h-20 w-screen px-4 sm:px-10 bg-slate-100">
+      <div className="flex justify-between items-center h-16 lg:h-24 w-screen px-4 sm:px-10 bg-slate-100 rounded-b-xl">
         {/* Logo & Search Bar */}
         <div className="flex gap-2 lg:gap-5">
           <Logo className="w-20 h-9" />

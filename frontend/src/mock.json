@@ -1,0 +1,17 @@
+{
+    "categories" : [
+        {"id": 1, "name": "Mobile"},
+        {"id": 2, "name": "Electronics"},
+        {"id": 3, "name": "Fashion"},
+        {"id": 4, "name": "Flight"},
+        {"id": 5, "name": "Furniture"},
+        {"id": 6, "name": "Appliances"},
+        {"id": 7, "name": "Toys"}
+    ],
+    "slides": [
+        {"id": 1, "name": "1st slide"},
+        {"id": 2, "name": "2nd slide"},
+        {"id": 3, "name": "3rd slide"},
+        {"id": 4, "name": "4th slide"}
+    ]
+}
