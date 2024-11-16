@@ -1,19 +1,16 @@
 import SearchIcon from "@mui/icons-material/Search";
-import { Link } from "react-router-dom";
 
-const SearchBar = (props) => {
-  const { className } = props
+const SearchBar = () => {
+
   return (
     <>
-      <form className={`${className}`}>
+      <form className="w-[50vw] bg-white flex items-center rounded-full px-3">
+        <SearchIcon />
         <input
           type="text"
-          className="w-4/5 h-full rounded-full px-10 focus:outline-none font-lato text-gray-700"
+          className="px-3 w-[40vw] focus:outline-none"
           placeholder="Search Product"
         />
-        <Link to="/">
-          <SearchIcon />
-        </Link>
       </form>
     </>
   );

@@ -5,7 +5,7 @@ const CartBadge = () => {
     
 
   return (
-    <Badge badgeContent={0} color="success">
+    <Badge badgeContent={1} color="success">
       <ShoppingCartOutlinedIcon />
     </Badge>
   );
