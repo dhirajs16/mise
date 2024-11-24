@@ -1,7 +1,7 @@
 
-const Product = (props) => {
+const ProductCard = (props) => {
     const {item} = props
-    console.log(item)
+    // console.log(item)
   return (
 
     <>
@@ -12,4 +12,4 @@ const Product = (props) => {
   )
 }
 
-export default Product
+export default ProductCard

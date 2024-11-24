@@ -1,4 +1,4 @@
-const Category = (props) => {
+const CategoryIcon = (props) => {
   const { name } = props;
   return (
     <>
@@ -9,4 +9,4 @@ const Category = (props) => {
   );
 };
 
-export default Category;
+export default CategoryIcon;

@@ -3,12 +3,10 @@ import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
 import { Pagination, Navigation } from "swiper/modules";
-import { categories } from "/src/mock.json";
-import Category from "./Category";
 
 const Slider = (props) => {
 
-  const { slidesPerView } = props;
+  const { slidesPerView, data, component: Component } = props;
 
   return (
     <>
@@ -18,9 +16,9 @@ const Slider = (props) => {
         pagination={false}
         slidesPerView={slidesPerView}
       >
-        {categories.map((category) => (
-          <SwiperSlide key={category.id}>
-            <Category name={category.name} />
+        {data.map((item) => (
+          <SwiperSlide key={item.id}>
+            <Component name={item.name} />
           </SwiperSlide>
         ))}
         </Swiper>

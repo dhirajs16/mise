@@ -40,6 +40,7 @@ INSTALLED_APPS = [
     # External Package
     'corsheaders',
     'rest_framework',
+    'django_filters',
     # Internal apps
     'api',
     'product',
@@ -134,9 +135,9 @@ CORS_ALLOWED_ORIGINS = [
 ]
 
 
-REST_FRAMEWORK = {
+# REST_FRAMEWORK = {
 
-    'SEARCH_PARAM': 'query', # default is 'search'
+#     'SEARCH_PARAM': 'query', # default is 'search'
     
-    'ORDERING_PARAM': 'sort', # default is 'ordering'
-}
+#     'ORDERING_PARAM': 'sort', # default is 'ordering'
+# }
