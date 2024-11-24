@@ -10,6 +10,7 @@ const Login = lazy(() => import("./Pages/Login.jsx"));
 const Home = lazy(() => import("./Pages/Home.jsx"));
 const About = lazy(() => import("./Pages/About.jsx"));
 const Contacts = lazy(() => import("./Pages/Contacts.jsx"));
+const product = lazy(() => import("./Pages/ProductDetail.jsx"));
 
 const loading = <div>Loading...</div>;
 
@@ -44,6 +45,14 @@ const router = createBrowserRouter([
       },
       {
         path: "/login",
+        element: (
+          <Suspense fallback={loading}>
+            <Login />
+          </Suspense>
+        ),
+      },
+      {
+        path: "/product/:id",
         element: (
           <Suspense fallback={loading}>
             <Login />

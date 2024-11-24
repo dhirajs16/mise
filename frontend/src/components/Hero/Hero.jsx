@@ -4,13 +4,15 @@ import Carousel from "../Carousel/Carousel";
 import { slides } from "/src/mock.json";
 import { useGetAllCategoriesQuery } from "../../services/productsApi";
 import CategoryIcon from "./CategoryIcon";
+import ProductGroup from "../Product/ProductGroup";
+import ProductDetail from "../../Pages/ProductDetail";
 
 const Hero = () => {
-  const {isError, isLoading, data} = useGetAllCategoriesQuery()
-  if (isLoading) return <div>Loading...</div>; 
-  if (isError) return <div>Error...</div>
-  if (!data || data.length === 0) return <div>No products</div>
-  
+  const { isError, isLoading, data } = useGetAllCategoriesQuery();
+  if (isLoading) return <div>Loading...</div>;
+  if (isError) return <div>Error...</div>;
+  if (!data || data.length === 0) return <div>No products</div>;
+
   return (
     <>
       <div className="hidden lg:grid grid-cols-5 gap-5 w-screen lg:h-[640px] lg:px-5 lg:py-3">
@@ -39,6 +41,12 @@ const Hero = () => {
       <div className="lg:hidden p-5">
         <Slider slidesPerView={4} data={data} component={CategoryIcon} />
       </div>
+
+      {/* Product Section */}
+      <ProductGroup category_id = {1} />
+      {/* <ProductGroup category_id = {2} /> */}
+      <ProductGroup category_id = {3} />
+      <ProductDetail />
     </>
   );
 };

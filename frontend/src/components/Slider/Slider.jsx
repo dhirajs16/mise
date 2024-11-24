@@ -18,7 +18,7 @@ const Slider = (props) => {
       >
         {data.map((item) => (
           <SwiperSlide key={item.id}>
-            <Component name={item.name} />
+            <Component item={item} />
           </SwiperSlide>
         ))}
         </Swiper>

@@ -1,11 +1,10 @@
 
 const ProductCard = (props) => {
     const {item} = props
-    // console.log(item)
   return (
 
     <>
-        <div className="h-[400px] bg-gray-600 rounded-lg">
+        <div className="h-[400px] bg-gray-600 rounded-lg p-2 mr-5">
             <img src={item.image} alt="" />
         </div>
     </>
