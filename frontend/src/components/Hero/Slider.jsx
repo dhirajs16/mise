@@ -7,6 +7,7 @@ import { categories } from "/src/mock.json";
 import Category from "./Category";
 
 const Slider = (props) => {
+
   const { slidesPerView } = props;
 
   return (

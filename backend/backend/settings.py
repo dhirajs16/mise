@@ -132,3 +132,11 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 CORS_ALLOWED_ORIGINS = [
     "http://localhost:5173",
 ]
+
+
+REST_FRAMEWORK = {
+
+    'SEARCH_PARAM': 'query', # default is 'search'
+    
+    'ORDERING_PARAM': 'sort', # default is 'ordering'
+}

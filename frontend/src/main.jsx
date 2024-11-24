@@ -1,8 +1,10 @@
-import { lazy, StrictMode, Suspense } from "react";
+import { lazy, Suspense } from "react";
 import { createRoot } from "react-dom/client";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import "./index.css";
 import App from "./App.jsx";
+import { Provider } from "react-redux";
+import { store } from "./app/store.js";
 
 const Login = lazy(() => import("./Pages/Login.jsx"));
 const Home = lazy(() => import("./Pages/Home.jsx"));
@@ -53,7 +55,7 @@ const router = createBrowserRouter([
 ])
 
 createRoot(document.getElementById("root")).render(
-  <StrictMode>
+  <Provider store={store}>
     <RouterProvider router={router} />
-  </StrictMode>
+  </Provider>
 )
