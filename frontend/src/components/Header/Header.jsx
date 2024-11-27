@@ -1,9 +1,9 @@
 import AccountCircleRoundedIcon from "@mui/icons-material/AccountCircleRounded";
-import CartBadge from "../CartBadge/CartBadge";
+import CartBadge from "../Badges/CartBadge";
 import MenuIcon from "@mui/icons-material/Menu";
 import NavItems from "./NavItems";
 import Logo from "../Logo/Logo";
-import WishListBadge from "../WishListBadge/WishListBadge";
+import WishListBadge from "../Badges/WishListBadge";
 import SearchBar from "./SearchBar";
 
 const Header = () => {
