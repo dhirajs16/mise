@@ -9,7 +9,7 @@
         {"id": 7, "name": "Toys"}
     ],
     "slides": [
-        {"id": 1, "name": "1st slide"},
+        {"id": 1, "name": "1st slide", "image": "https://unsplash.com/photos/a-restaurant-with-tables-and-chairs-covered-in-blankets-05cDX4y2oJ8"},
         {"id": 2, "name": "2nd slide"},
         {"id": 3, "name": "3rd slide"},
         {"id": 4, "name": "4th slide"}

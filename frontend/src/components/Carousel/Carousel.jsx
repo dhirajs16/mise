@@ -6,7 +6,7 @@ import "swiper/css/pagination";
 import "swiper/css/autoplay";
 
 export default (props) => {
-  const {slides, slidesPerView} = props
+  const { slides, slidesPerView } = props;
 
   return (
     <Swiper
@@ -16,8 +16,13 @@ export default (props) => {
       slidesPerView={slidesPerView}
       navigation
       pagination={{ clickable: true }}
-      autoplay={{ delay: 3000, disableOnInteraction: false }}    >
-      {slides.map((slide) => <SwiperSlide key={slide.id}>{slide.name}</SwiperSlide>)}
+      autoplay={{ delay: 3000, disableOnInteraction: false }}
+    >
+      {slides.map((slide) => (
+        <SwiperSlide key={slide.id}>
+          <img src="" alt={slide.name} />
+        </SwiperSlide>
+      ))}
     </Swiper>
   );
 };

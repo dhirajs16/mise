@@ -5,7 +5,6 @@ import { slides } from "/src/mock.json";
 import { useGetAllCategoriesQuery } from "../../services/productsApi";
 import CategoryIcon from "./CategoryIcon";
 import ProductGroup from "../Product/ProductGroup";
-import ProductDetail from "../../Pages/ProductDetail";
 
 const Hero = () => {
   const { isError, isLoading, data } = useGetAllCategoriesQuery();

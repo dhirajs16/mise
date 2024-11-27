@@ -12,14 +12,14 @@ const ProductGroup = (props) => {
 
   return (
     <>
-      <div className="bg-gray-200 mb-5">
+      <div className="bg-gray-200 mb-3 lg:mb-5">
         <h3 className="text-center uppercase font-semibold pt-10">Products</h3>
         <div className="hidden lg:flex lg:p-10">
           <Slider slidesPerView={5} data={data} component={ProductCard} />
         </div>
         {/* Mobile view */}
         <div className="lg:hidden p-5">
-          <Slider slidesPerView={4} data={data} component={ProductCard} />
+          <Slider slidesPerView={2} data={data} component={ProductCard} />
         </div>
       </div>
     </>
