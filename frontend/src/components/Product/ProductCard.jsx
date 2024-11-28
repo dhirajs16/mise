@@ -33,7 +33,7 @@ const ProductCard = (props) => {
           <div className="font-bold flex gap-2">
             NRs. <span>{item.price - (item.discount * item.price) / 100}</span>
             <span className="text-white bg-yellow-500 rounded-lg font-medium px-3">
-              {Math.floor(item.discount)}%
+              {Math.floor(item.discount)}% off
             </span>
           </div>
         </div>

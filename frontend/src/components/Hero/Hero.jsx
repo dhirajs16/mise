@@ -43,6 +43,7 @@ const Hero = () => {
 
       {/* Product Section */}
       <ProductGroup category_id = {1} />
+      <ProductGroup category_id = {2} />
       <ProductGroup category_id = {3} />
     </>
   );

@@ -13,7 +13,7 @@ const ProductGroup = (props) => {
   return (
     <>
       <div className="bg-gray-200 mb-3 lg:mb-5">
-        <h3 className="text-center uppercase font-semibold pt-10">Products</h3>
+        <h3 className="text-center uppercase font-semibold pt-10"></h3>
         <div className="hidden lg:flex lg:p-10">
           <Slider slidesPerView={5} data={data} component={ProductCard} />
         </div>
