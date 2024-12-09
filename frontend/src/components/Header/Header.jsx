@@ -5,6 +5,7 @@ import NavItems from "./NavItems";
 import Logo from "../Logo/Logo";
 import WishListBadge from "../Badges/WishListBadge";
 import SearchBar from "./SearchBar";
+import { Link } from "react-router-dom";
 
 const Header = () => {
   return (
@@ -23,7 +24,9 @@ const Header = () => {
         <div className="hidden lg:flex gap-5 justify-center">
           <WishListBadge />
           <CartBadge />
-          <AccountCircleRoundedIcon />
+          <Link to='/login'>
+            <AccountCircleRoundedIcon />
+          </Link>
         </div>
 
         {/* Ham Menu for mobile view */}
