@@ -35,10 +35,10 @@ const ProductDetail = () => {
           </h3>
 
           {/* product pricing and discount */}
-          <div className="flex items-center gap-3 text-xl font-bold cursor-default">
+          <div className="flex items-center gap-3 text-5xl text-green-700 font-bold cursor-default">
             {/* price after discount */}
             <span>NRs. {data.price - data.discount * data.price * 0.01}</span>
-            <span className="line-through text-lg text-gray-600">
+            <span className="line-through text-xl text-gray-600">
               {Math.floor(data.price)}
             </span>
             {/* discount tag */}

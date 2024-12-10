@@ -34,6 +34,7 @@ This project uses React for the frontend and Django with DRF for the backend. Fo
    npm install react-icons
    npm install @mui/icons-material @mui/material @emotion/styled @emotion/react
    npm install react-router-dom
+   npm install react-hook-form
 
    ```
 
